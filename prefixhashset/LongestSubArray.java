@@ -101,7 +101,11 @@ public class LongestSubArray {
             }
 
             // Store the current prefix sum or update its frequency
-            map.put(pref, map.getOrDefault(pref, 0)+1);
+            // map.put(pref, map.getOrDefault(pref, 0)+1);
+            // This preserves the earliest index to obtain the longest subarray.
+            if(!map.containsKey(pref)) {
+                map.put(pref,i);
+            }
         }
 
         // Return the maximum length found
