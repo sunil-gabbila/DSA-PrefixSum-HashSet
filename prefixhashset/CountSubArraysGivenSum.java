@@ -17,6 +17,7 @@ import java.util.Scanner;
  *
  * Time Complexity: O(n) average case
  * Space Complexity: O(n)
+ * Uses one main class to static method in same class.
  */
 public class CountSubArraysGivenSum {
 
